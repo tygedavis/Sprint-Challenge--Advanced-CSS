@@ -184,6 +184,9 @@ p {
   text-decoration: none;
   font-size: 1.8rem;
 }
+.navigation a:hover {
+  color: #c8cbd5;
+}
 @media (max-width: 500px) {
   .navigation {
     width: 100%;
@@ -264,7 +267,7 @@ footer {
   height: 50px;
   background-color: black;
   color: white;
-  border-radius: 7px;
+  border-radius: 5px;
   font-size: 1.8rem;
   border: 1px solid black;
   display: flex;
@@ -277,6 +280,8 @@ footer {
 .home .walk .walk-text .btn:hover {
   background-color: white;
   color: black;
+  transition: background-color 0.75s ease;
+  transition: color 0.75s ease;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
