@@ -266,12 +266,17 @@ footer {
   color: white;
   border-radius: 7px;
   font-size: 1.8rem;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .home .walk .walk-text .btn:hover {
   cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {

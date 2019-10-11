@@ -71,10 +71,16 @@
 
 			.btn {
 				//The CSS for our button is right here-----------------------------------
-				.button(100px, 50px);
+        .button(100px, 50px);
+        border: 1px solid black;
 				display: flex;
 				justify-content: center;
         align-items: center;
+
+        &:hover{
+          background-color: white;
+          color: black;
+        }
         
         @media @phone {
           width: 100%;
