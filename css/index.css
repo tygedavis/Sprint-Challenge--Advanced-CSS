@@ -226,6 +226,10 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+.home .space-images img:hover {
+  opacity: 0.75;
+  transition: opacity 0.15s ease-in;
+}
 @media (max-width: 500px) {
   .home .space-images img {
     width: 100%;
