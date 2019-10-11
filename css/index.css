@@ -169,6 +169,8 @@ p {
   justify-content: center;
   background-color: #F6F6F6;
   border-bottom: #F1F1F1;
+  position: sticky;
+  top: -5.6rem;
 }
 .navigation h1 {
   font-size: 5rem;
