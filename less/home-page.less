@@ -1,75 +1,129 @@
 // Home Content
 
 .home {
+	.intro {
+			img {
+        border-radius: 7px;
+        width: 100%;
+      }
 
-  .intro {
+		h2 {
+			padding: 15px;
+		}
 
-    h2 {
-      padding: 15px;
+		p {
+			padding: 0 15px;
     }
+	}
 
-    p {
-      padding:0 15px;
-    }
-  
-  }
-
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
+	.space-images {
+		display: flex;
+		flex-wrap: wrap;
     width: 100%;
 
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
+		img {
+			width: 28%;
+			margin: 20px 2.5%;
+			border-radius: 20px;
       height: 100%;
-    }
-  }
 
-  .visit-planets {
-    padding: 15px;
-
-    h3 {
-      margin-top: 11px;
-    }
-
-    p {
-      margin-top: 13px;
-    }
-  }
-
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
-
-    .walk-text {
-      width: 50%;
-
-      h3 {
-        margin-bottom: 10px;
+      &:hover{
+        opacity: .75;
+        transition: opacity .15s ease-in;
       }
 
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-      }
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
+      @media @phone{
         width: 100%;
-        height: auto;
-        border-radius: 10px;
       }
     }
   }
-}// home
+  
+  .launch, .sky {
+    @media @phone {
+      display: none;
+    }
+  }
+
+	.visit-planets {
+		padding: 15px;
+
+		h3 {
+			margin-top: 11px;
+		}
+
+		p {
+			margin-top: 13px;
+		}
+	}
+
+	.walk {
+		margin-top: 60px;
+		border-top: 1px solid @main-border-color;
+		padding: 50px 60px;
+		display: flex;
+		justify-content: center;
+
+		.walk-text {
+			width: 50%;
+
+			h3 {
+				margin-bottom: 10px;
+			}
+
+			p {
+				margin-bottom: 26px;
+			}
+
+			.btn {
+				//The CSS for our button is right here-----------------------------------
+        .button(100px, 50px);
+        border: 1px solid black;
+				display: flex;
+				justify-content: center;
+        align-items: center;
+
+        &:hover{
+          background-color: white;
+          color: black;
+          transition: background-color .75s ease;
+          transition: color 0.75s ease;
+        }
+        
+        @media @phone {
+          width: 100%;
+        }
+      }
+
+      @media @phone {
+        margin-top: 5%;
+        width: 95%;
+      }
+		}
+
+		.walk-img {
+			width: 46%;
+			margin-left: 4%;
+
+			img {
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+      }
+      
+      @media @phone {
+        margin: 0;
+        width: 95%;
+      }
+    }
+
+    @media @phone {
+      margin-top: 0;
+      padding: 2% 0%;
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+	}
+} // home
